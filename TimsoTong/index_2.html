@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tong so can tim </h2>
+       
+    <script>
+        let list = [10,6,50,5,60];
+        let NumberType = {}
+        let find = 11
+        let listRaw = []
+        for (let index = 0; index < list.length; index++) {
+               NumberType[list[index]] = index 
+        }
+        for (let index = 0; index < list.length; index++) {
+              let target = find - list[index];
+              if(NumberType[target]  &&  NumberType[target] !== index ){
+                  console.log(index+ "vanmanh")
+                    listRaw.push(index)
+                    console.log(NumberType[target] +"vh" )
+                    listRaw.push(NumberType[target])
+                  
+
+              }
+
+            
+        }
+        console.log(listRaw)
+
+          
+</script>
+    
+    
+</body>
+</html>

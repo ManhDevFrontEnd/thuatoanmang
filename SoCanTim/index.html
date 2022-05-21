@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuat Toan so cann Tim </title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+let Array_a = [1, 2, 3]
+        let Array_b = [101, 2, 1, 10]
+        let Array_c = [2, 1]
+        let list_Array = Array_a.concat(Array_b,Array_c)
+        let list_raw = []
+    
+        for( var index=0;index<list_Array.length-1;index++){
+            for(var item =  index+1 ; item < list_Array.length;item++){
+                if(list_Array[index]>list_Array[item]){
+                    let raw = list_Array[index]
+                    list_Array[index] = list_Array[item]
+                    list_Array[item] = raw
+                }
+                
+            }
+        }
+     
+       for (let index = 0; index < list_Array.length-1; index++) {
+            for (let item = index; item < list_Array.length; item++) {
+                  if(list_Array[index]!==list_Array[item]){
+                     console.log( list_Array[index])
+   
+                  }
+            }        
+       
+              
+       }
+
+
+
+
+
+
+
+
+</script>
+
+</html>
